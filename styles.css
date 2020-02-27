@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     width: 100%;
@@ -9,7 +13,7 @@ body {
 
 h3 {
     font-size: 1.5rem;
-    margin: 5px 0px 8px 0px;
+    margin: 10px 0px;
 }
 
 #main-icon {
@@ -49,4 +53,44 @@ h3 {
 
 .social-icon:hover {
     stroke: #4392F1;
+}
+
+#see-more-btn {
+    height: 35px;
+    width: 210px;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 10px;
+    font-size: 1.25em;
+    color: white;
+    border-radius: 2px;
+}
+
+#see-more-btn:hover {
+    border-color: #4392F1;
+    color: #4392F1;
+}
+
+#skills-section {
+    height: 100vh;
+}
+
+@media(max-width: 480px){
+    #flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #headshot {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+
+    #title-heading {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
 }
