@@ -35,3 +35,7 @@ h3 {
 .social-icon {
     margin: 0px 20px;
 }
+
+.social-icon:hover {
+    stroke: #4392F1;
+}
