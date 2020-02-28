@@ -67,6 +67,7 @@ h3 {
 #see-more-btn:hover {
     border-color: #4392F1;
     color: #4392F1;
+    cursor: pointer;
 }
 
 #skills-section {
