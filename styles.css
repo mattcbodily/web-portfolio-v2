@@ -9,6 +9,25 @@ body {
     padding: 0 5%;
 }
 
+nav {
+    width: 325px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 37px;
+    right: 25px;
+}
+
+nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #4392F1;
+}
+
 h3 {
     font-size: 2rem;
     margin: 10px 0px;
