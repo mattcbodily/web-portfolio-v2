@@ -4,14 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Arcade</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='../reset.css'>
     <link rel='stylesheet' type='text/css' href='../styles.css'>
 </head>
-<body>
-    <h1>Welcome to the Arcade</h1>
-    <img class='game-links' src='https://miro.medium.com/max/2100/1*dQzFEaAHwxouaImAuUd3EQ.gif' alt='Snake Game' />
-    <img class='game-links' src='https://i.pcmag.com/imagery/articles/01EkIOfisgxkfodZ4JmTIXa-1.fit_scale.size_2698x1517.v1569489280.jpg' alt='Flappy Bird Game' />
-    <img class='game-links' src='https://www.codeproject.com/KB/directx/SuperBrickBreaker/SuperBrickBreaker.gif' alt='Brick Break Game' />
+<body class='arcade-landing'>
+    <a href='../index.html'>
+        <img class='main-icon' src='../assets/PortfolioLogo.svg' alt='Matt Bodily Icon'/>
+    </a>
+    <section class='arcade-heading'>
+        <h1>Welcome to the Arcade</h1>
+        <p class='arcade-description'>Congratulations! You found the easter egg arcade. This is where I put the games I have built using HTML, CSS, and JavaScript. Click a game to play!</p>
+    </section>
+    <section class='games-container'>
+        <section>
+            <a href='snake/snake.html'>
+                <video class='game-links'>
+                    <source src='../assets/arcade-assets/snake-preview.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <p>Snake</p>
+        </section>
+        <section>
+            <a href='flappy-bird/flappy-bird.html'>
+                <video class='game-links'>
+                    <source src='../assets/arcade-assets/flappy-bird-preview.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <p>Flappy Bird</p>
+        </section>
+        <section>
+            <a href='brick-break/brick-break.html'>
+                <video class='game-links'>
+                    <source src='../assets/arcade-assets/brick-break-preview.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <p>Brick Break</p>
+        </section>
+    </section>
+    <p>Note: All of these game have sound effects and music upon game start</p>
+    <p>Music: https://www.purple-planet.com</p>
 </body>
+<script src='arcadeLanding.js'></script>
 </html>
