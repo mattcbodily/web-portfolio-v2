@@ -99,11 +99,11 @@ p {
     justify-content: space-evenly;
     box-sizing: border-box;
     padding: 0 5%;
+    margin-bottom: 20px;
 }
 
 .game-links {
     height: 300px;
-    /* width: 400px; */
     border-radius: 5px;
 }
 
