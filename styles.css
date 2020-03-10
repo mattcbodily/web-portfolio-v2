@@ -7,18 +7,22 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 h3 {
     font-size: 2rem;
     margin: 10px 0px;
 }
 
-#main-icon {
+.main-icon {
     position: fixed;
     top: 25px;
     left: 25px;
 }
 
-#flex-container {
+.flex-container {
     height: 100vh;
     box-sizing: border-box;
     padding: 0 5%;
@@ -27,20 +31,16 @@ h3 {
     align-items: center;
 }
 
-#headshot {
+.headshot {
     width: 300px;
     border-radius: 50%;
 }
 
-#title-heading {
-    font-size: 3rem;
-}
-
-#name-span {
+.name-span {
     color: #4392F1;
 }
 
-#icon-container {
+.icon-container {
     display: flex;
     justify-content: center;
 }
@@ -53,7 +53,7 @@ h3 {
     stroke: #4392F1;
 }
 
-#see-more-btn {
+.see-more-btn {
     height: 35px;
     width: 210px;
     background-color: transparent;
@@ -64,11 +64,15 @@ h3 {
     border-radius: 2px;
 }
 
-#see-more-btn:hover {
+.see-more-btn:hover {
     border-color: #4392F1;
     color: #4392F1;
     cursor: pointer;
 }
+
+/* .game-links {
+    height: 250px;
+} */
 
 @media(max-width: 1100px){
     body {
