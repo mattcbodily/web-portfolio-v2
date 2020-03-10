@@ -29,3 +29,17 @@
     height: 300px;
     border-radius: 5px;
 }
+
+.under-construction {
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .under-construction {
+        display: initial;
+    }
+
+    .desktop-content {
+        display: none;
+    }
+}
