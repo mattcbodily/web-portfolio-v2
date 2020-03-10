@@ -8,12 +8,15 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin: 10px 0px;
+    letter-spacing: 1px;
 }
 
 p {
@@ -22,28 +25,52 @@ p {
     line-height: 1.5rem;
 }
 
+span {
+    font-size: 1.25rem;
+}
+
 .main-icon {
     position: fixed;
     top: 25px;
     left: 25px;
+    z-index: 4;
+}
+
+.landing-opacity {
+    height: 100vh;
+    width: 100%;
+    background-color: #357DED;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: .7;
+}
+
+.landing-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url('assets/portfolio-background.jpg');
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
 }
 
 .flex-container {
     height: 100vh;
+    width: 100%;
     box-sizing: border-box;
     padding: 0 5%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .headshot {
     width: 300px;
     border-radius: 50%;
-}
-
-.name-span {
-    color: #4392F1;
 }
 
 .icon-container {
@@ -56,55 +83,35 @@ p {
 }
 
 .social-icon:hover {
-    stroke: #4392F1;
+    stroke: #192BC2;
 }
 
-.see-more-btn {
+.resume-btn {
     height: 35px;
     width: 210px;
     background-color: transparent;
-    border: 2px solid white;
+    border: 3px solid white;
     margin-top: 10px;
     font-size: 1.25em;
     color: white;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
-.see-more-btn:hover {
-    border-color: #4392F1;
-    color: #4392F1;
+.resume-btn:hover {
+    border-color: #192BC2;
+    color: #192BC2;
     cursor: pointer;
 }
 
-.arcade-landing {
-    font-family: 'Orbitron';
+.see-more-link {
+    position: absolute;
+    bottom: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.arcade-heading {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
 }
 
-.arcade-description {
-    width: 705px;
-}
-
-.games-container {
-    display: flex;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    padding: 0 5%;
-    margin-bottom: 20px;
-}
-
-.game-links {
-    height: 300px;
-    border-radius: 5px;
+.see-more-link span {
+    margin-right: 7px;
 }
 
 @media(max-width: 1100px){
