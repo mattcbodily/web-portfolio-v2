@@ -103,7 +103,7 @@ p {
 
 .game-links {
     height: 300px;
-    width: 400px;
+    /* width: 400px; */
     border-radius: 5px;
 }
 
