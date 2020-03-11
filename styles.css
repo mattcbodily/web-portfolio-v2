@@ -1,6 +1,6 @@
-/* html {
+html {
     scroll-snap-type: y mandatory;
-} */
+}
 
 body {
     min-height: 100vh;
@@ -70,9 +70,9 @@ span {
     align-items: center;
 }
 
-/* .snap {
+.snap {
     scroll-snap-align: start;
-} */
+}
 
 .social-flex {
     display: flex;
