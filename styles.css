@@ -1,6 +1,6 @@
-html {
+/* html {
     scroll-snap-type: y mandatory;
-}
+} */
 
 body {
     min-height: 100vh;
@@ -70,13 +70,23 @@ span {
     align-items: center;
 }
 
-.snap {
+/* .snap {
     scroll-snap-align: start;
+} */
+
+.social-flex {
+    display: flex;
+    justify-content: center;
 }
 
 .icon-container {
+    height: 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 22px;
+    margin-right: 10px;
 }
 
 .social-icon {
@@ -117,7 +127,7 @@ span {
     margin-right: 7px;
 }
 
-.about-skills-section {
+.about-section {
     height: 100vh;
     background-color: #3772FF;
     display: flex;
@@ -128,14 +138,19 @@ span {
     width: 50%;
     background-image: url(assets/oregonpicture.jpg);
     background-size: cover;
+    box-shadow: 2px 0px 2px black;
 }
 
-.about-me{
+.about-me {
+    width: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: left;
+}
+
+.about-me div {
+    width: 450px;
 }
 
 .headshot-opacity {
@@ -145,6 +160,13 @@ span {
     left: 0;
     background-color: #357DED;
     opacity: .5;
+}
+
+.skills-section {
+    height: 100vh;
+    background-color:#3772FF;
+    box-sizing: border-box;
+    padding-top: 40px;
 }
 
 .projects-section {
