@@ -72,6 +72,7 @@ span {
 
 .snap {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .social-flex {
@@ -153,7 +154,13 @@ span {
 }
 
 .about-me div {
-    width: 450px;
+    width: 500px;
+}
+
+.about-me p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;   
+    margin-left: 3px;
 }
 
 .headshot-opacity {
