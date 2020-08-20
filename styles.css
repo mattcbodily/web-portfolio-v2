@@ -1,6 +1,6 @@
-/* html {
+html {
     scroll-snap-type: y mandatory;
-} */
+}
 
 body {
     min-height: 100vh;
@@ -9,6 +9,9 @@ body {
     font-family: 'Open Sans';
     text-align: center;
     scroll-behavior: smooth;
+    background-image: url('assets/portfolio-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -19,7 +22,7 @@ h1 {
 
 h3 {
     font-size: 2.25rem;
-    margin: 10px 0px;
+    margin: 0;
     letter-spacing: 1px;
 }
 
@@ -40,21 +43,15 @@ span {
     z-index: 3;
 }
 
-.landing-opacity {
+.background-opacity {
     height: 100vh;
     width: 100%;
-    background-color: #357DED;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    opacity: .7;
+    background-color: rgba(53,125,237,.7);
 }
 
 .landing-image {
     height: 100vh;
     width: 100%;
-    background-image: url('assets/portfolio-background.jpg');
-    background-size: cover;
 }
 
 .flex-container {
@@ -70,9 +67,9 @@ span {
     align-items: center;
 }
 
-/* .snap {
+.snap {
     scroll-snap-align: start;
-} */
+}
 
 .social-flex {
     display: flex;
@@ -132,20 +129,37 @@ span {
 
 .about-section {
     height: 100vh;
-    background-color: #3772FF;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.about-flex {
+    height: 70vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .headshot {
-    height: 100vh;
-    width: 50%;
-    background-image: url(assets/oregonpicture.jpg);
+    height: 400px;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 2px black;
+    background-image: url(assets/Portfoliopicture.jpg);
     background-size: cover;
-    box-shadow: 2px 0px 2px black;
 }
 
 .about-me {
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,29 +168,6 @@ span {
 
 .about-me div {
     width: 450px;
-}
-
-.headshot-opacity {
-    height: 100vh;
-    width: 50%;
-    position: absolute;
-    left: 0;
-    background-color: #357DED;
-    opacity: .5;
-}
-
-.skills-section {
-    height: 100vh;
-    background-color:#3772FF;
-    box-sizing: border-box;
-    padding-top: 40px;
-}
-
-.projects-section {
-    height: 100vh;
-    box-sizing: border-box;
-    padding-top: 40px;
-    background-color: #3772FF;
 }
 
 @media(max-width: 1100px){
