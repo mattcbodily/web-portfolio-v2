@@ -200,6 +200,48 @@ span {
     margin: 5px 0;
 }
 
+.project-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.project-card {
+    height: 250px;
+    width: 350px;
+    box-sizing: border-box;
+    margin: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 2px 1px black;
+    overflow: hidden;
+}
+
+.project-image {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.project-text-container {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 250px;
+    transition: 500ms;
+}
+
+.project-card:hover .project-text-container {
+    top: 0px;
+}
+
+.project-text {
+    margin: 0;
+}
+
 @media(max-width: 1200px){
     body {
         padding: 0;
@@ -324,5 +366,15 @@ span {
 
     .about-me p {
         font-size: 1rem;
+    }
+
+    .project-card {
+        height: 175px;
+        width: 280px;
+    }
+
+    .project-image {
+        height: 175px;
+        width: 280px;
     }
 }
