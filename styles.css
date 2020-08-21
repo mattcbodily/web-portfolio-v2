@@ -1,9 +1,9 @@
-html {
+/* html {
     scroll-snap-type: y mandatory;
-}
+} */
 
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     color: white;
     font-family: 'Open Sans';
@@ -44,7 +44,7 @@ span {
 }
 
 .background-opacity {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: rgba(53,125,237,.7);
 }
@@ -135,7 +135,7 @@ span {
 }
 
 .about-flex {
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -181,7 +181,7 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 
 .skill-container {
@@ -243,6 +243,7 @@ span {
     }
 
     .headshot-container {
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -250,6 +251,41 @@ span {
         height: 275px;
         width: 275px;
         border-radius: 50%;
+    }
+
+    .about-me {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-me div {
+        width: 460px;
+    }
+
+    .about-me h3 {
+        margin: 5px 0;
+    }
+
+    .about-me p {
+        margin: 2px 0;
+    }
+
+    .skills-flex {
+        width: 100%;
+    }
+
+    .skill-container {
+        margin: 10px 0;
+    }
+
+    .skill-icon {
+        height: 80px;
+        width: 80px;
+        margin: 15px 20px;
+    }
+
+    .skill-text {
+        font-size: 1.25rem;
     }
 }
 
@@ -275,5 +311,18 @@ span {
     .social-icon {
         height: 24px;
         width: 24px;
+    }
+
+    .headshot {
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-me {
+        width: 90%;
+    }
+
+    .about-me p {
+        font-size: 1rem;
     }
 }
