@@ -1,9 +1,21 @@
+body {
+    background-image: url('../../assets/portfolio-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .arcade-landing {
+    height: 100vh;
     font-family: 'Orbitron';
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #357DED;
+}
+
+.background-opacity {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(53,125,237,.7);
 }
 
 .arcade-heading {

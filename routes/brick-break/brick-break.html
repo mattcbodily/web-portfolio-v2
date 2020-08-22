@@ -10,17 +10,25 @@
     <link rel='stylesheet' type='text/css' href='brick-break.css'>
 </head>
 <body>
-    <h1>Brick Break | The Arcade</h1>
-    <canvas id='game-board' height='500px' width='900px' style='background-color: #000;'></canvas>
-    <p>Instructions:</p>
-    <ul>
-        <li>Press spacebar to start/restart</li>
-        <li>Move the paddle with the left and right arrows</li>
-        <li>Stop the paddle with the down arrow</li>
-        <li>The ball speeds up if the paddle hits it while moving!</li>
-        <li>The ball slows down if it hits the paddle while the paddle isn't moving</li>
-        <li>Destroy all the bricks to win</li>
-    </ul>
+    <main class='brick-break background-opacity'>
+        <a href='../arcade-landing/arcade-landing.html' class='arcade-back-btn'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <p>Go Back</p>
+        </a>
+        <h1>Brick Break | The Arcade</h1>
+        <canvas id='game-board' height='500px' width='900px' style='background-color: #000;'></canvas>
+        <p>Instructions:</p>
+        <ul>
+            <li>Press spacebar to start/restart</li>
+            <li>Move the paddle with the left and right arrows</li>
+            <li>Stop the paddle with the down arrow</li>
+            <li>The ball speeds up if the paddle hits it while moving!</li>
+            <li>The ball slows down if it hits the paddle while the paddle isn't moving</li>
+            <li>Destroy all the bricks to win</li>
+        </ul>
+    </main>
 </body>
 <script src='brickBreak.js'></script>
 </html>

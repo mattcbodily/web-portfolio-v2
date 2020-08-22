@@ -10,13 +10,21 @@
     <link rel='stylesheet' type='text/css' href='snake.css'>
 </head>
 <body>
-    <h1>Snake | The Arcade</h1>
-    <section>
-        <span id='high-score'>High score: 0</span>
-        <span id='game-score'>Your score: 0</span>
-    </section>
-    <canvas id='game-board' height='500' width='500' style='background: black;'></canvas>
-    <p>Hit spacebar to start</p>
+    <main class='snake background-opacity'>
+        <a href='../arcade-landing/arcade-landing.html' class='arcade-back-btn'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <p>Go Back</p>
+        </a>
+        <h1>Snake | The Arcade</h1>
+        <section>
+            <span id='high-score'>High score: 0</span>
+            <span id='game-score'>Your score: 0</span>
+        </section>
+        <canvas id='game-board' height='500' width='500' style='background: black;'></canvas>
+        <p>Hit spacebar to start</p>
+    </main>
 </body>
 <script src='snake.js'></script>
 </html>

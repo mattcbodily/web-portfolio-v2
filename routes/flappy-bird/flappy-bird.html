@@ -10,14 +10,22 @@
     <link rel='stylesheet' type='text/css' href='flappy-bird.css'>
 </head>
 <body>
-    <h1>Flappy Bird | The Arcade</h1>
-    <canvas id='game-board' height='578px' width='325px'></canvas>
-    <p>Instructions:</p>
-    <ul>
-        <li>Press enter to start/restart</li>
-        <li>Press space bar or up arrow to fly</li>
-        <li>Press down arrow to speed up fall</li>
-    </ul>
+    <main class='flappy-bird background-opacity'>
+        <a href='../arcade-landing/arcade-landing.html' class='arcade-back-btn'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <p>Go Back</p>
+        </a>
+        <h1>Flappy Bird | The Arcade</h1>
+        <canvas id='game-board' height='578px' width='325px'></canvas>
+        <p>Instructions:</p>
+        <ul>
+            <li>Press enter to start/restart</li>
+            <li>Press space bar or up arrow to fly</li>
+            <li>Press down arrow to speed up fall</li>
+        </ul>
+    </main>
 </body>
 <script src='flappyBird.js'></script>
 </html>
