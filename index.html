@@ -14,13 +14,13 @@
 <body>
     <header>
         <img class='main-icon' src='./assets/PortfolioLogo.svg' alt='Matt Bodily Icon'/>
-        <img id='menu-btn' src='./assets/menu.svg' alt='Menu'/>
-        <nav id='dropdown-menu'>
-            <p>Home</p>
-            <p>About</p>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Contact</p>
+        <img id='menu-btn' src='./assets/menu.svg' alt='Menu' onclick='menuToggle()'/>
+        <nav class='dropdown-menu'>
+            <p onclick="smoothScroll('.flex-container')">Home</p>
+            <p onclick="smoothScroll('.about-section')">About</p>
+            <p onclick="smoothScroll('.skills-section')">Skills</p>
+            <p onclick="smoothScroll('.projects-section')">Projects</p>
+            <p onclick="smoothScroll('.contact-section')">Contact</p>
         </nav>
     </header>
     <div class='landing-image'></div>
@@ -60,18 +60,15 @@
         </section>
     </section>
     <section class='about-section background-opacity snap'>
-        <div class='headshot-opacity'></div>
-        <div class='about-flex'>
             <div class='headshot-container'>
                 <div class='headshot'></div>
             </div>
             <div class='about-me'>
-                <div>
-                    <h3>Who am I?</h3>
-                    <p>I am a web developer passionate about building web applications that benefit peoples lives. I am eager to learn new things to improve my abilities as a developer, and love being able to work with and learn from others on a team.</p>
-                    <br/>
-                    <p>Outside of code, you can find me outdoors, especially at the National Parks. I enjoy spending time with my family, cheering on my favorite sports teams, mountain biking, and playing the drums.</p>
-                </div>
+            <div>
+                <h3>Who am I?</h3>
+                <p>I am a web developer passionate about building web applications that benefit peoples lives. I am eager to learn new things to improve my abilities as a developer, and love being able to work with and learn from others on a team.</p>
+                <br/>
+                <p>Outside of code, you can find me outdoors, especially at the National Parks. I enjoy spending time with my family, cheering on my favorite sports teams, mountain biking, and playing the drums.</p>
             </div>
         </div>
     </section>

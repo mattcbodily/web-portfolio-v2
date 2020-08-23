@@ -1,7 +1,14 @@
+//dropdown functionality
+function menuToggle(){
+    const dropdown = document.querySelector('.dropdown-menu');
+
+    dropdown.classList.toggle('open')
+}
+
 //scroll functionality
 function smoothScroll(element){
     const targetElement = document.querySelector(element);
-    targetElement.scrollIntoView();
+    targetElement.scrollIntoView({behavior: 'smooth', block: 'end'});
 }
 
 //skills section
