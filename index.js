@@ -8,7 +8,14 @@ function menuToggle(){
 //scroll functionality
 function smoothScroll(element){
     const targetElement = document.querySelector(element);
-    targetElement.scrollIntoView({behavior: 'smooth', block: 'end'});
+
+    if(screen.width <= 480 ){
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+    } else {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'end'});
+    }
+
+    menuToggle();
 }
 
 //skills section

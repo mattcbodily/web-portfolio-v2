@@ -13,7 +13,9 @@
 </head>
 <body>
     <header>
-        <img class='main-icon' src='./assets/PortfolioLogo.svg' alt='Matt Bodily Icon'/>
+        <div class='icon-background'>
+            <img class='main-icon' src='./assets/PortfolioLogo.svg' alt='Matt Bodily Icon'/>
+        </div>
         <img id='menu-btn' src='./assets/menu.svg' alt='Menu' onclick='menuToggle()'/>
         <nav class='dropdown-menu'>
             <p onclick="smoothScroll('.flex-container')">Home</p>
@@ -24,7 +26,7 @@
         </nav>
     </header>
     <div class='landing-image'></div>
-    <section class='flex-container background-opacity'>
+    <section class='flex-container background-opacity snap'>
         <section>
             <h1 class='title-heading'>Hi, I'm Matt Bodily</h1>
             <h3>A user focused web developer</h3>
@@ -77,10 +79,10 @@
         <section class='skills-flex'></section>
     </section>
     <section class='projects-section background-opacity snap'>
-        <h3>Projects I've Worked On</h3>
+        <h3>My Projects</h3>
         <section class='project-display'></section>
     </section>
-    <section class='contact-section background-opacity'>
+    <section class='contact-section background-opacity snap'>
         <h3>Contact Me</h3>
         <p class='contact-prompt'>I would love to work with you! If you find I'm a great fit for your company or project, you can reach me with the information below.</p>
         <section class='contact-info'>
