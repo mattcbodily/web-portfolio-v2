@@ -45,10 +45,6 @@ span {
     font-size: 1.25rem;
 }
 
-.icon-background {
-    background: #75A4F1;
-}
-
 #menu-btn {
     cursor: pointer;
 }
@@ -220,7 +216,7 @@ span {
 }
 
 .skill-container {
-    margin: 20px 0px;
+    margin: 15px 0px;
 }
 
 .skill-icon {
@@ -342,20 +338,12 @@ span {
 }
 
 @media(max-width: 800px){
-    html {
-        scroll-snap-type: y mandatory;
-    }
-
     h1 {
         font-size: 3rem;
     }
     
     h3 {
         font-size: 1.75rem;
-    }
-
-    .snap {
-        scroll-snap-align: start;
     }
 
     .about-section {
