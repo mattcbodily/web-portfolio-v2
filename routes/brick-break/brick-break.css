@@ -1,5 +1,7 @@
 body {
-    background-color: #357DED;
+    background-image: url('../../assets/portfolio-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     font-family: 'Orbitron';
     text-align: center;
@@ -24,4 +26,41 @@ li {
     font-size: 16px;
     margin: 20px;
     text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.brick-break {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-opacity {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(53,125,237,.7);
+}
+
+.arcade-back-btn {
+    width: 180px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arcade-back-btn:hover p {
+    color: #192BC2;
+}
+
+.arcade-back-btn:hover svg {
+    stroke: #192BC2;
 }

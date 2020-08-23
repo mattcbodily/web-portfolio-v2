@@ -12,9 +12,19 @@
     <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-    <a href='routes/arcade-landing/arcade-landing.html'>
-        <img class='main-icon' src='./assets/PortfolioLogo.svg' alt='Matt Bodily Icon'/>
-    </a>
+    <header>
+        <div class='icon-background'>
+            <img class='main-icon' src='./assets/PortfolioLogo.svg' alt='Matt Bodily Icon'/>
+        </div>
+        <img id='menu-btn' src='./assets/menu.svg' alt='Menu' onclick='menuToggle()'/>
+        <nav class='dropdown-menu'>
+            <p onclick="smoothScroll('.flex-container')">Home</p>
+            <p onclick="smoothScroll('.about-section')">About</p>
+            <p onclick="smoothScroll('.skills-section')">Skills</p>
+            <p onclick="smoothScroll('.projects-section')">Projects</p>
+            <p onclick="smoothScroll('.contact-section')">Contact</p>
+        </nav>
+    </header>
     <div class='landing-image'></div>
     <section class='flex-container background-opacity snap'>
         <section>
@@ -50,26 +60,17 @@
                 </a>
             </div>
         </section>
-        <!-- <section class='see-more-link'>
-                <span>See what I'm all about</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-        </section> -->
     </section>
-    <!-- <section class='about-section background-opacity snap'>
-        <div class='headshot-opacity'></div>
-        <div class='about-flex'>
+    <section class='about-section background-opacity snap'>
             <div class='headshot-container'>
                 <div class='headshot'></div>
             </div>
             <div class='about-me'>
-                <div>
-                    <h3>Who am I?</h3>
-                    <p>I am a web developer passionate about building web applications that benefit peoples lives. I am eager to learn new things to improve my abilities as a developer, and love being able to work with and learn from others on a team.</p>
-                    <br/>
-                    <p>Outside of code, you can find me outdoors, especially at the National Parks. I enjoy spending time with my family, cheering on my favorite sports teams, mountain biking, and playing the drums.</p>
-                </div>
+            <div>
+                <h3>Who am I?</h3>
+                <p>I am a web developer passionate about building web applications that benefit peoples lives. I am eager to learn new things to improve my abilities as a developer, and love being able to work with and learn from others on a team.</p>
+                <br/>
+                <p>Outside of code, you can find me outdoors, especially at the National Parks. I enjoy spending time with my family, cheering on my favorite sports teams, mountain biking, and playing the drums.</p>
             </div>
         </div>
     </section>
@@ -78,8 +79,17 @@
         <section class='skills-flex'></section>
     </section>
     <section class='projects-section background-opacity snap'>
-        <h3>Projects I've Worked On</h3>
-    </section> -->
+        <h3>My Projects</h3>
+        <section class='project-display'></section>
+    </section>
+    <section class='contact-section background-opacity snap'>
+        <h3>Contact Me</h3>
+        <p class='contact-prompt'>I would love to work with you! If you find I'm a great fit for your company or project, you can reach me with the information below.</p>
+        <section class='contact-info'>
+            <p>Phone (call or text): 385-335-2517</p>
+            <p>Email: mattcbodily@gmail.com</p>
+        </section>
+    </section>
 </body>
 <script src='index.js'></script>
 </html>
