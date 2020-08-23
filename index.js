@@ -1,3 +1,9 @@
+//scroll functionality
+function smoothScroll(element){
+    const targetElement = document.querySelector(element);
+    targetElement.scrollIntoView();
+}
+
 //skills section
 const baseUrl = './assets/skill-assets/',
       htmlIcon = {url: `${baseUrl}html5.png`, alt: 'HTML'},

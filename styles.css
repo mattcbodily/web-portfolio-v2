@@ -14,6 +14,20 @@ body {
     background-attachment: fixed;
 }
 
+header {
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 500;
@@ -36,11 +50,15 @@ span {
     font-size: 1.25rem;
 }
 
-.main-icon {
+/* .main-icon {
     position: fixed;
     top: 25px;
     left: 25px;
     z-index: 3;
+} */
+
+#dropdown-menu {
+    display: none;
 }
 
 .background-opacity {
@@ -127,11 +145,11 @@ span {
     margin-right: 7px;
 }
 
-.about-section, .skills-section, .projects-section {
+.about-section, .skills-section, .projects-section, .contact-section {
     min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
-    padding-top: 100px;
+    padding-top: 40vh;
 }
 
 .about-flex {
@@ -263,6 +281,11 @@ span {
 .link-button:hover {
     background: white;
     color: black;
+}
+
+.contact-prompt {
+    width: 630px;
+    margin: 10px auto;
 }
 
 @media(max-width: 1200px){

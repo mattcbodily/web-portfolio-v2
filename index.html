@@ -12,11 +12,19 @@
     <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-    <a href='routes/arcade-landing/arcade-landing.html'>
+    <header>
         <img class='main-icon' src='./assets/PortfolioLogo.svg' alt='Matt Bodily Icon'/>
-    </a>
+        <img id='menu-btn' src='./assets/menu.svg' alt='Menu'/>
+        <nav id='dropdown-menu'>
+            <p>Home</p>
+            <p>About</p>
+            <p>Skills</p>
+            <p>Projects</p>
+            <p>Contact</p>
+        </nav>
+    </header>
     <div class='landing-image'></div>
-    <section class='flex-container background-opacity snap'>
+    <section class='flex-container background-opacity'>
         <section>
             <h1 class='title-heading'>Hi, I'm Matt Bodily</h1>
             <h3>A user focused web developer</h3>
@@ -74,6 +82,14 @@
     <section class='projects-section background-opacity snap'>
         <h3>Projects I've Worked On</h3>
         <section class='project-display'></section>
+    </section>
+    <section class='contact-section background-opacity'>
+        <h3>Contact Me</h3>
+        <p class='contact-prompt'>I would love to work with you! If you find I'm a great fit for your company or project, you can reach me with the information below.</p>
+        <section class='contact-info'>
+            <p>Phone (call or text): 385-335-2517</p>
+            <p>Email: mattcbodily@gmail.com</p>
+        </section>
     </section>
 </body>
 <script src='index.js'></script>
