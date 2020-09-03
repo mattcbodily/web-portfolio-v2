@@ -58,7 +58,8 @@ const projectURL = './assets/project-assets/',
       projects = [
         {name: 'Chatter', image: `${projectURL}chatter-portfolio.png`, description: 'Chat application built with React, Redux, Sass, Node, Express, and PostgreSQL', gitHub: 'https://github.com/mattcbodily/chatter-v2', liveSite: 'http://134.209.2.212:3333'},
         {name: 'Pokédex', image: `${projectURL}pokedex-portfolio.png`, description: 'Pokédex application built with React (including React hooks), and the PokeAPI', gitHub: 'https://github.com/mattcbodily/front-end-pokedex', liveSite: 'https://pokedex-developer-project.netlify.app/#/'},
-        {name: 'Arcade', image: `${projectURL}arcade-portfolio.png`, description: "Arcade is where I store games I've built using HTML, CSS, and JavaScript.", gitHub: '', liveSite: 'routes/arcade-landing/arcade-landing.html'}
+        {name: 'Arcade', image: `${projectURL}arcade-portfolio.png`, description: "Arcade is where I store games I've built using HTML, CSS, and JavaScript.", gitHub: '', liveSite: 'routes/arcade-landing/arcade-landing.html'},
+        {name: 'Doist', image: `${projectURL}doist-portfolio.png`, description: 'Task management application built with React (including React hooks), Context API, and SCSS', gitHub: 'https://github.com/mattcbodily/todo-list-v2', liveSite: 'https://doist-developer-project.netlify.app/#/'}
       ]
 
 for(let j = 0; j < projects.length; j++){
