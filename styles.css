@@ -253,6 +253,7 @@ span {
     height: 250px;
     width: 350px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .project-text-container {
@@ -416,14 +417,16 @@ span {
     }
 
     .icon-container {
-        height: 24px;
+        height: 75px;
+        width: 90%;
         padding: 0;
         margin: 0;
     }
 
     .social-icon {
-        height: 24px;
-        width: 24px;
+        height: 48px;
+        width: 48px;
+        stroke-width: 1px;
     }
 
     .headshot {

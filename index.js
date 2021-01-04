@@ -29,7 +29,7 @@ const baseUrl = './assets/skill-assets/',
       reduxIcon = {url: `${baseUrl}redux.png`, alt: 'Redux'},
       nodeIcon = {url: `${baseUrl}nodejs.png`, alt: 'Node.js'},
       expressIcon = {url: `${baseUrl}expressjslogo.png`, alt: 'Express.js'},
-      gitIcon = {url: `${baseUrl}git_icon.png`, alt: 'Git'}
+      gitIcon = {url: `${baseUrl}git_icon.png`, alt: 'Git'},
       jestIcon = {url: `${baseUrl}jest_icon.png`, alt: 'Jest'};
       skillsArr = [htmlIcon, cssIcon, jsIcon, sassIcon, reactIcon, reduxIcon, nodeIcon, expressIcon, postgresIcon, gitIcon, jestIcon];
 
@@ -92,6 +92,7 @@ for(let j = 0; j < projects.length; j++){
         gitHubBtn.innerText = 'View on GitHub';
         gitHubLink.href = projects[j].gitHub;
         gitHubLink.target = '_blank';
+        gitHubLink.rel='noreferrer';
 
         gitHubLink.appendChild(gitHubBtn);
         btnContainer.appendChild(gitHubLink);
@@ -110,6 +111,7 @@ for(let j = 0; j < projects.length; j++){
         }
         liveSiteLink.href = projects[j].liveSite;
         liveSiteLink.target = '_blank';
+        liveSiteLink.rel='noreferrer';
 
         liveSiteLink.appendChild(liveLinkBtn);
         btnContainer.appendChild(liveSiteLink);
