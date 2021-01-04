@@ -231,11 +231,11 @@ span {
     margin: 5px 0;
 }
 
-.project-display {
+.featured-project-display, .mini-project-display {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin: 50px 0 75px 0;
 }
 
 .project-card {
@@ -442,7 +442,7 @@ span {
         font-size: 1rem;
     }
 
-    .project-display {
+    .featured-project-display, .mini-project-display {
         margin-top: 15px;
     }
 

@@ -56,14 +56,16 @@ for(let i = 0; i < skillsArr.length; i++){
 //projects section
 const projectURL = './assets/project-assets/',
       projects = [
-        {name: 'Chatter', image: `${projectURL}chatter-portfolio.png`, description: 'Chat application built with React, Redux, Sass, Node, Express, and PostgreSQL', gitHub: 'https://github.com/mattcbodily/chatter-v2', liveSite: 'http://134.209.2.212:3333'},
-        {name: 'Pokédex', image: `${projectURL}pokedex-portfolio.png`, description: 'Pokédex application built with React (including React hooks), and the PokeAPI', gitHub: 'https://github.com/mattcbodily/front-end-pokedex', liveSite: 'https://pokedex-developer-project.netlify.app/#/'},
-        {name: 'Arcade', image: `${projectURL}arcade-portfolio.png`, description: "Arcade is where I store games I've built using HTML, CSS, and JavaScript.", gitHub: '', liveSite: 'routes/arcade-landing/arcade-landing.html'},
-        {name: 'Doist', image: `${projectURL}doist-portfolio.png`, description: 'Task management application built with React (including React hooks), Context API, and SCSS', gitHub: 'https://github.com/mattcbodily/todo-list-v2', liveSite: 'https://doist-developer-project.netlify.app/#/'}
+        {name: 'PKMK Photography', type: 'featured', image: `${projectURL}pkmk-photos.png`, description: 'Built for PKMK Photography to increase their online presence. Built with React.', gitHub: 'https://github.com/PKMK-photography/pkmk-photography', liveSite: 'https://www.pkmkphotos.com'},
+        {name: 'Chatter', type: 'featured', image: `${projectURL}chatter-portfolio.png`, description: 'Chat application built with React, Redux, Sass, Node, Express, and PostgreSQL', gitHub: 'https://github.com/mattcbodily/chatter-v2', liveSite: 'http://134.209.2.212:3333'},
+        {name: 'Pokédex', type: 'mini', image: `${projectURL}pokedex-portfolio.png`, description: 'Pokédex application built with React (including React hooks), and the PokeAPI', gitHub: 'https://github.com/mattcbodily/front-end-pokedex', liveSite: 'https://pokedex-developer-project.netlify.app/#/'},
+        {name: 'Arcade', type: 'mini', image: `${projectURL}arcade-portfolio.png`, description: "Arcade is where I store games I've built using HTML, CSS, and JavaScript.", gitHub: '', liveSite: 'routes/arcade-landing/arcade-landing.html'},
+        {name: 'Doist', type: 'mini', image: `${projectURL}doist-portfolio.png`, description: 'Task management application built with React (including React hooks), Context API, and SCSS', gitHub: 'https://github.com/mattcbodily/todo-list-v2', liveSite: 'https://doist-developer-project.netlify.app/#/'}
       ]
 
 for(let j = 0; j < projects.length; j++){
-    const projectDisplay = document.querySelector('.project-display'),
+    const featuredProjectDisplay = document.querySelector('.featured-project-display')
+          miniProjectDisplay = document.querySelector('.mini-project-display'),
           projectCard = document.createElement('div'),
           projectImage = document.createElement('img'),
           projectTextContainer = document.createElement('div'),
@@ -118,5 +120,9 @@ for(let j = 0; j < projects.length; j++){
     }
 
     projectTextContainer.appendChild(btnContainer);
-    projectDisplay.appendChild(projectCard);
+    if(projects[j].type === 'featured'){
+        featuredProjectDisplay.appendChild(projectCard)
+    } else {
+        miniProjectDisplay.appendChild(projectCard);
+    }
 }
